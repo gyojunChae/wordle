@@ -4,7 +4,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  height: 400px;
+  position: absolute;
+  bottom: 30%;
+  width: 100vw;
 }
 .keyboard-row {
   display: flex;
