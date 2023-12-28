@@ -47,7 +47,7 @@ function appStart() {
   const handleBackspace = () => {
     if (index > 0) {
       const preBlock = document.querySelector(
-        `.board-column[data-index='${attempts}${index - 1}']`
+        `.board-block[data-index='${attempts}${index - 1}']`
       );
       preBlock.innerText = "";
     }
@@ -59,7 +59,7 @@ function appStart() {
     const key = event.key.toUpperCase();
     const keyCode = event.keyCode;
     const thisBlock = document.querySelector(
-      `.board-column[data-index='${attempts}${index}']`
+      `.board-block[data-index='${attempts}${index}']`
     );
 
     if (event.key === "Backspace") handleBackspace();
